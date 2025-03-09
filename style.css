@@ -1,0 +1,146 @@
+* {
+    font-family: 'poppins', sans-serif;
+    color: midnightblue;
+
+  }
+  
+body {
+margin: 45px;
+background-color: floralwhite;
+  }
+
+  
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: firebrick;
+    font-weight: bold;
+}
+
+h2 {
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 0%;
+    margin-block-start: 0%;
+    margin-inline-end: 0%;
+}
+
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+} 
+
+h4{
+    color: #a1a1a1;
+    font-style: italic;
+    margin-top: 0%;
+    margin-bottom: 15%;
+    margin-block-start: 0%;
+}
+
+p{
+    font-family: Verdana, sans-serif;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    justify-content: center; 
+    margin: 3%;
+  
+}
+
+.buttons .buttonStyle {
+    width: 100%;
+    border: none;
+    background-color: midnightblue;
+    color: floralwhite;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+
+
+
+.buttonStyle:active {
+    background-color: #a1a1a1; 
+}
+
+
+
+.meal-menu{
+    border-radius: 30px;
+    padding: 10%;
+    border-style: dotted;
+    border-color: firebrick;
+    margin-bottom: 10%;
+
+}
+
+.services .dishes {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'a a b c' 
+    'a a d e'
+    ;
+    gap: 2.4rem;
+  }
+
+  .dinner-big {
+    grid-area: a;
+  
+  }
+  
+  .dishes img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border-style: dotted;
+    border-color: firebrick;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+@media only screen and (max-width: 600px) {
+    .restaurant-title{
+        font-size: 1.6rem;
+    }
+   
+    .services .dishes {
+          grid-template-areas: 
+          'a a' 
+          'a a'
+          'b c'
+          'd e' ;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 601px) {
+
+    .restaurant-title{
+        font-size: 2rem;
+    }
+
+    .services .dishes {
+        grid-auto-rows: 10rem;
+        grid-template-areas: 
+        'a a a a' 
+        'a a a a'
+        'b c d e'
+        ;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+        .restaurant-title{
+            font-size: 2.5rem;
+        }
+}
